@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
-    "check": "node --check src/server.js && node --check src/app.js && node --check src/config/env.js && node --check src/config/database.js && node --check src/models/User.js && node --check src/models/CareerProfile.js && node --check src/modules/users/user.service.js && node --check src/modules/profiles/profile.schemas.js && node --check src/modules/profiles/profile.service.js && node --check src/middleware/require-auth.js && node --check src/middleware/request-context.js && node --check src/middleware/error-handler.js && node --check src/routes/index.js",
-    "test": "node --test test/*.test.js"
+    "check": "node --check src/server.js && node --check src/app.js && node --check src/config/env.js && node --check src/config/database.js && node --check src/models/User.js && node --check src/models/CareerProfile.js && node --check src/models/Industry.js && node --check src/models/Role.js && node --check src/models/Skill.js && node --check src/models/RolePathVersion.js && node --check src/models/RoleSkillRequirement.js && node --check src/models/IndustryTrendSnapshot.js && node --check src/models/CareerGoal.js && node --check src/modules/industries/industry.schemas.js && node --check src/modules/industries/industry.service.js && node --check src/modules/roles/role.schemas.js && node --check src/modules/roles/role.service.js && node --check src/modules/career-goals/career-goal.schemas.js && node --check src/modules/career-goals/career-goal.service.js && node --check src/scripts/seed-industries.js && node --check src/modules/users/user.service.js && node --check src/modules/profiles/profile.schemas.js && node --check src/modules/profiles/profile.service.js && node --check src/middleware/require-auth.js && node --check src/middleware/request-context.js && node --check src/middleware/error-handler.js && node --check src/routes/index.js",
+    "test": "node --test test/*.test.js",
+    "seed:industries": "node src/scripts/seed-industries.js"
   },
   "dependencies": {
     "@talentbridge/contracts": "0.1.0",

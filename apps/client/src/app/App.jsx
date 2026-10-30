@@ -5,6 +5,9 @@ import AuthPage from '../features/auth/AuthPage.jsx';
 import DashboardPage from '../features/dashboard/DashboardPage.jsx';
 import OnboardingPage from '../features/onboarding/OnboardingPage.jsx';
 import ProfilePage from '../features/profile/ProfilePage.jsx';
+import IndustryLibraryPage from '../features/industries/IndustryLibraryPage.jsx';
+import RoleMarketplacePage from '../features/career-directory/RoleMarketplacePage.jsx';
+import CareerSelectionPage from '../features/career-selection/CareerSelectionPage.jsx';
 import PublicLayout from '../layouts/PublicLayout.jsx';
 import WorkspaceLayout from '../layouts/WorkspaceLayout.jsx';
 import LandingPage from '../pages/LandingPage.jsx';
@@ -37,12 +40,21 @@ export default function App({ configurationError }) {
         <Route path="/sign-up/*" element={<AuthPage mode="sign-up" />} />
       </Route>
 
-      {/* Onboarding has its own full-page Figma composition, not the workspace shell. */}
+      {/* Onboarding and the Step-2-based career selection use the approved full-page form composition. */}
       <Route
         path="/onboarding"
         element={
           <RequireSession>
             <OnboardingPage />
+          </RequireSession>
+        }
+      />
+
+      <Route
+        path="/career-selection"
+        element={
+          <RequireSession>
+            <CareerSelectionPage />
           </RequireSession>
         }
       />
@@ -56,6 +68,8 @@ export default function App({ configurationError }) {
       >
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/industries" element={<IndustryLibraryPage />} />
+        <Route path="/roles" element={<RoleMarketplacePage />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />

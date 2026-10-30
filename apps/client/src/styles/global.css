@@ -2985,3 +2985,179 @@ p {
 .tb-onboarding-bottom-note{margin:27px 0 0;text-align:center;color:#8a94ae;font-size:10px}
 @media(max-width:900px){.tb-onboarding-page{grid-template-columns:280px minmax(0,1fr)}.tb-onboarding-aside{padding:32px 24px}.tb-onboarding-aside-copy h2{font-size:30px}.tb-onboarding-main{padding:35px 28px 28px}}
 @media(max-width:680px){.tb-onboarding-page{display:block}.tb-onboarding-aside{min-height:0;padding:18px 20px 17px}.tb-onboarding-brand{font-size:17px}.tb-onboarding-brand img{width:28px;height:28px}.tb-onboarding-aside-copy{margin-top:22px;max-width:none}.tb-onboarding-aside-copy h2{margin:8px 0 6px;font-size:25px}.tb-onboarding-aside-copy p{font-size:11px}.tb-onboard-aside-eyebrow{font-size:9px}.tb-onboarding-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:20px}.tb-onboarding-step{display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center}.tb-onboarding-step-number{width:26px;height:26px;flex-basis:26px;font-size:10px}.tb-onboarding-step strong{font-size:9px;line-height:1.25}.tb-onboarding-step small{display:none}.tb-onboarding-privacy{display:none}.tb-onboarding-main{min-height:0;padding:23px 20px 28px}.tb-onboarding-topline{margin-bottom:17px;font-size:10px}.tb-onboarding-progress{margin-bottom:25px}.tb-onboard-heading{margin-bottom:22px}.tb-onboard-heading h1{font-size:26px}.tb-onboard-heading p{font-size:12px}.tb-onboard-grid{grid-template-columns:1fr;gap:16px}.tb-onboard-span{grid-column:auto}.tb-onboard-direction-fields{margin-top:20px}.tb-onboard-work-preferences{margin-top:20px}.tb-onboard-choice-row{gap:4px}.tb-onboard-choice{padding:8px 7px;font-size:10px}.tb-onboard-goal{min-height:66px;padding:10px}.tb-onboard-skill-entry{flex-direction:column}.tb-onboard-skill-entry button{min-height:40px}.tb-onboard-plan-card{padding:18px}.tb-onboard-plan-card h2{font-size:20px}.tb-onboarding-actions{align-items:stretch;flex-wrap:wrap}.tb-onboarding-actions>span{width:100%}.tb-onboarding-primary,.tb-onboarding-back{min-height:42px}.tb-onboarding-primary{flex:1}}
+
+/* Phase 2: approved Industry Library concept and Figma Career Directory frame. */
+.figma-workspace-shell.phase2-navigation { grid-template-columns:220px minmax(0,1fr); }
+.phase2-navigation .figma-workspace-sidebar { padding:22px 14px 18px; }
+.phase2-navigation .figma-workspace-brand { padding-bottom:30px; font-size:17px; }
+.phase2-navigation .figma-workspace-nav { gap:5px; }
+.phase2-navigation .figma-workspace-nav-link { min-height:38px; padding:0 11px; font-size:11px; gap:12px; }
+.phase2-navigation .figma-workspace-nav-link.active { background:#302c80; }
+.phase2-navigation .figma-phase2-nav-divider { margin-top:15px; padding-top:14px; border-top:1px solid rgba(214,222,242,.18); }
+.phase2-navigation .figma-workspace-topbar { height:64px; padding:0 30px; }
+.phase2-navigation .figma-phase2-global-search { width:min(520px,56vw); height:38px; }
+.phase2-navigation .figma-phase2-global-search input { font-size:11px; }
+.phase2-navigation .figma-workspace-content { max-width:1400px; padding:24px 26px 48px; }
+.tb-phase2-sidebar-promo { margin-top:auto; padding:17px 16px; border:1px solid rgba(125,112,223,.35); border-radius:13px; color:#e4e3ff; background:linear-gradient(145deg,#20235a,#28265f 74%,#3d347b); }
+.tb-phase2-sidebar-promo > span { width:34px; height:34px; margin-bottom:10px; display:grid; place-items:center; border-radius:50%; color:#d8ceff; background:#5143a4; font-size:17px; }
+.tb-phase2-sidebar-promo strong { display:block; color:#fff; font:700 12px Manrope,sans-serif; }
+.tb-phase2-sidebar-promo p { margin:5px 0 11px; color:#c3c4df; font-size:10px; line-height:1.5; }
+.tb-phase2-sidebar-promo a { min-height:31px; padding:0 12px; display:inline-flex; align-items:center; border-radius:18px; color:#fff; background:#6049db; font-size:10px; font-weight:700; }
+
+.tb-industry-page { color:#1b294b; }
+.tb-industry-breadcrumb,.tb-role-directory-breadcrumb { display:flex; align-items:center; gap:9px; margin:0 0 14px; color:#8591aa; font-size:11px; }
+.tb-industry-breadcrumb a,.tb-role-directory-breadcrumb a { color:#7887a5; }
+.tb-industry-breadcrumb strong,.tb-role-directory-breadcrumb strong { color:#273452; font-weight:700; }
+.tb-industry-top-grid { display:grid; grid-template-columns:minmax(0,1fr) 244px; gap:18px; align-items:start; }
+.tb-industry-main-column { min-width:0; }
+.tb-industry-heading { margin:0 0 23px; }
+.tb-industry-heading h1 { margin:0 0 8px; color:#182747; font:800 clamp(26px,2.5vw,33px)/1.17 Manrope,sans-serif; letter-spacing:-.045em; }
+.tb-industry-heading p { margin:0 0 3px; color:#7282a2; font-size:12px; line-height:1.55; }
+.tb-industry-feature { position:relative; min-height:214px; margin:0 0 32px; padding:24px 25px; overflow:hidden; display:flex; align-items:center; border-radius:13px; background:linear-gradient(110deg,#e7e8ff 0%,#f0efff 56%,#dceeff 100%); }
+.tb-industry-feature-copy { position:relative; z-index:2; width:62%; max-width:460px; }
+.tb-industry-feature-tag { display:inline-flex; min-height:22px; align-items:center; padding:0 9px; border:1px solid rgba(104,75,214,.13); border-radius:13px; color:#6849cf; background:#fff9; font-size:9px; font-weight:800; letter-spacing:.04em; }
+.tb-industry-feature h2 { margin:11px 0 8px; color:#17284b; font:800 clamp(19px,1.8vw,23px)/1.2 Manrope,sans-serif; letter-spacing:-.035em; }
+.tb-industry-feature p { max-width:420px; margin:0 0 16px; color:#5f7195; font-size:11px; line-height:1.6; }
+.tb-industry-feature-button { min-height:37px; padding:0 16px; display:inline-flex; align-items:center; gap:9px; border-radius:20px; color:#fff; background:#5941e4; box-shadow:0 5px 12px rgba(77,62,206,.18); font-size:11px; font-weight:800; }
+.tb-industry-feature > img { position:absolute; right:0; bottom:0; width:44%; height:100%; object-fit:cover; object-position:center; mix-blend-mode:multiply; }
+.tb-industry-why-panel { margin-top:0; padding:17px 16px; border:1px solid #e2e8f3; border-radius:12px; background:#fff; }
+.tb-industry-why-panel h2 { margin:0 0 18px; color:#1b2b4c; font:800 14px/1.3 Manrope,sans-serif; letter-spacing:-.02em; }
+.tb-industry-why-list { display:grid; gap:18px; }
+.tb-industry-why-item { display:grid; grid-template-columns:43px minmax(0,1fr); align-items:center; gap:12px; }
+.tb-industry-why-icon { width:43px; height:43px; display:grid; place-items:center; border-radius:50%; font-size:18px; font-weight:700; }
+.tb-industry-why-icon.cyan { color:#00a6b4; background:#e2f7fb; }
+.tb-industry-why-icon.violet { color:#6c43df; background:#f0eaff; }
+.tb-industry-why-icon.blue { color:#3472df; background:#e7efff; }
+.tb-industry-why-icon.gold { color:#d89e20; background:#fff6da; }
+.tb-industry-why-item strong,.tb-industry-why-item small { display:block; }
+.tb-industry-why-item strong { margin-bottom:3px; color:#556988; font-size:10px; font-weight:800; line-height:1.35; }
+.tb-industry-why-item small { color:#7d8ca8; font-size:9px; line-height:1.45; }
+.tb-industry-section-heading { margin:0 0 14px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.tb-industry-section-heading h2 { margin:0; color:#1d2c4c; font:800 15px Manrope,sans-serif; letter-spacing:-.025em; }
+.tb-industry-section-heading > span { color:#8290aa; font-size:9px; }
+.tb-industry-search { height:39px; margin:0 0 14px; padding:0 10px; display:flex; align-items:center; gap:9px; border:1px solid #e1e7f1; border-radius:8px; background:#fff; }
+.tb-industry-search > span { color:#8795ae; font-size:18px; }
+.tb-industry-search input { min-width:0; flex:1; border:0; outline:0; color:#273652; background:transparent; font-size:11px; }
+.tb-industry-search button { min-height:28px; padding:0 12px; border:0; border-radius:6px; color:#fff; background:#6148dc; font-size:10px; font-weight:700; }
+.tb-industry-card-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+.tb-industry-card { min-height:185px; padding:12px 13px; display:flex; flex-direction:column; border:1px solid #e2e8f2; border-radius:10px; background:#fff; transition:border-color .15s,transform .15s,box-shadow .15s; }
+.tb-industry-card:hover { transform:translateY(-2px); border-color:#cfc5fa; box-shadow:0 9px 24px rgba(39,49,91,.07); }
+.tb-industry-glyph { width:47px; height:47px; margin-bottom:10px; display:grid; place-items:center; border-radius:15px; color:#2078e6; background:#e3f2ff; font:800 18px Manrope,sans-serif; }
+.tb-industry-glyph-database { color:#2878d5; background:#e3efff; }
+.tb-industry-glyph-brain { color:#7753e6; background:#f0eaff; }
+.tb-industry-glyph-shield { color:#219e9e; background:#e1f6f5; }
+.tb-industry-glyph-cloud { color:#159db9; background:#e2f8ff; }
+.tb-industry-glyph-infinity { color:#7756e7; background:#eee8ff; }
+.tb-industry-glyph-product { color:#8a4cdb; background:#f2e6ff; }
+.tb-industry-glyph-design { color:#347be6; background:#e5efff; }
+.tb-industry-card h3 { margin:0 0 7px; color:#1e2e4f; font:800 11px/1.3 Manrope,sans-serif; letter-spacing:-.02em; }
+.tb-industry-card p { margin:0 0 12px; color:#7485a3; font-size:9px; line-height:1.5; }
+.tb-industry-card-link { margin-top:auto; display:flex; align-items:center; justify-content:space-between; color:#667b9e; font-size:9px; font-weight:700; }
+.tb-industry-card-link i { width:27px; height:27px; display:grid; place-items:center; border-radius:50%; color:#3f5fe0; background:#eef2ff; font-style:normal; font-size:14px; }
+.tb-industry-empty { min-height:116px; padding:26px; display:grid; place-items:center; border:1px dashed #d8deea; border-radius:10px; color:#71809b; background:#fff; font-size:12px; text-align:center; }
+.tb-industry-trends { margin-top:23px; }
+.tb-industry-trend-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.tb-industry-trend-card { min-height:132px; padding:13px 14px; border:1px solid #e3e9f2; border-radius:9px; background:#fff; }
+.tb-industry-trend-icon { width:34px; height:34px; margin-bottom:7px; display:grid; place-items:center; border-radius:10px; color:#2876da; background:#e9f2ff; font-size:16px; }
+.tb-industry-trend-icon.tone-2 { color:#7651dc; background:#f1eaff; }
+.tb-industry-trend-icon.tone-3 { color:#3479dc; background:#e6efff; }
+.tb-industry-trend-card h3 { margin:0 0 5px; color:#253451; font:800 10px Manrope,sans-serif; }
+.tb-industry-trend-card p { min-height:35px; margin:0 0 8px; color:#7c8ba5; font-size:9px; line-height:1.45; }
+.tb-industry-trend-status { color:#8b96aa; font-size:8px; font-weight:700; }
+.tb-industry-next-step { margin-top:12px; padding:14px 17px; display:flex; align-items:center; gap:14px; border-radius:11px; background:linear-gradient(100deg,#eeebff,#f4f1ff 65%,#e7eaff); }
+.tb-industry-next-icon { width:44px; height:44px; flex:0 0 auto; display:grid; place-items:center; border-radius:50%; color:#6d4de2; background:#e0d9ff; font-size:21px; }
+.tb-industry-next-step h2 { margin:0 0 3px; color:#29365a; font:800 11px Manrope,sans-serif; }
+.tb-industry-next-step p { margin:0; color:#7483a2; font-size:9px; line-height:1.45; }
+.tb-industry-next-step a { min-height:33px; margin-left:auto; padding:0 13px; flex:0 0 auto; display:inline-flex; align-items:center; gap:7px; border-radius:18px; color:#fff; background:#5d47df; font-size:9px; font-weight:800; }
+
+/* Career Directory / Role Marketplace follows the supplied 3-column role-card grid. */
+.tb-role-directory-page { color:#202d4c; }
+.tb-role-directory-heading { margin:0 0 18px; display:flex; align-items:flex-end; justify-content:space-between; gap:18px; }
+.tb-role-directory-eyebrow { display:block; margin-bottom:8px; color:#7858e7; font-size:9px; font-weight:800; letter-spacing:.08em; }
+.tb-role-directory-heading h1 { margin:0 0 7px; color:#182747; font:800 clamp(24px,2.4vw,31px)/1.2 Manrope,sans-serif; letter-spacing:-.045em; }
+.tb-role-directory-heading p { margin:0; color:#7886a1; font-size:11px; }
+.tb-role-directory-compare { min-height:33px; padding:0 12px; flex:0 0 auto; display:inline-flex; align-items:center; border:1px solid #e0e5ef; border-radius:7px; color:#344362; background:#fff; font-size:10px; font-weight:700; }
+.tb-role-directory-filters { margin:0 0 17px; display:grid; grid-template-columns:minmax(0,1fr) 220px auto; gap:10px; }
+.tb-role-search-field { min-height:39px; padding:0 11px; display:flex; align-items:center; gap:9px; border:1px solid #e0e6f0; border-radius:8px; background:#fff; }
+.tb-role-search-field > span { color:#8392ae; font-size:18px; }
+.tb-role-search-field input { width:100%; border:0; outline:0; color:#263756; background:transparent; font-size:10px; }
+.tb-role-filter-select { min-height:39px; padding:0 10px; display:flex; align-items:center; gap:8px; border:1px solid #e0e6f0; border-radius:8px; background:#fff; }
+.tb-role-filter-select span { color:#8995ab; font-size:9px; white-space:nowrap; }
+.tb-role-filter-select select { width:100%; min-width:0; border:0; outline:0; color:#2c3b5a; background:#fff; font-size:10px; }
+.tb-role-filter-button { padding:0 14px; border:0; border-radius:8px; color:#fff; background:#6549df; font-size:10px; font-weight:800; }
+.tb-role-directory-feature { min-height:128px; margin:0 0 22px; padding:20px 22px; display:flex; align-items:center; justify-content:space-between; gap:18px; border-radius:12px; color:#fff; background:linear-gradient(105deg,#151b42 0%,#282364 58%,#40338e 100%); }
+.tb-role-directory-feature > div > span { display:block; margin-bottom:7px; color:#cbc3ff; font-size:8px; font-weight:800; letter-spacing:.1em; }
+.tb-role-directory-feature h2 { margin:0 0 6px; color:#fff; font:800 19px Manrope,sans-serif; letter-spacing:-.03em; }
+.tb-role-directory-feature p { max-width:560px; margin:0; color:#d0d1e4; font-size:10px; line-height:1.5; }
+.tb-role-directory-feature a { min-height:34px; padding:0 13px; flex:0 0 auto; display:inline-flex; align-items:center; gap:7px; border:1px solid rgba(255,255,255,.25); border-radius:8px; color:#fff; font-size:9px; font-weight:800; }
+.tb-role-directory-section-heading { margin-bottom:13px; display:flex; align-items:flex-end; justify-content:space-between; gap:12px; }
+.tb-role-directory-section-heading h2 { margin:0 0 4px; color:#1d2c4b; font:800 15px Manrope,sans-serif; }
+.tb-role-directory-section-heading p { margin:0; color:#7f8ca5; font-size:9px; }
+.tb-role-directory-section-heading > span { color:#7988a3; font-size:9px; }
+.tb-role-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; }
+.tb-role-market-card { min-height:205px; padding:15px 15px 13px; display:flex; flex-direction:column; border:1px solid #e1e7f0; border-radius:10px; background:#fff; }
+.tb-role-market-card-icon { width:36px; height:36px; margin-bottom:9px; display:grid; place-items:center; border-radius:10px; color:#6b4bd7; background:#f0ebff; font-size:18px; }
+.tb-role-market-industries { margin-bottom:5px; color:#7b88a1; font-size:8px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+.tb-role-market-card h3 { margin:0 0 7px; color:#1d2c4b; font:800 13px Manrope,sans-serif; }
+.tb-role-market-card p { margin:0 0 13px; color:#7886a0; font-size:9px; line-height:1.55; }
+.tb-role-market-card-footer { margin-top:auto; padding-top:9px; display:flex; align-items:center; justify-content:space-between; gap:8px; border-top:1px solid #eff1f6; }
+.tb-role-market-card-footer > span { color:#7b8ba4; font-size:8px; }
+.tb-role-market-card-footer a { color:#6246d7; font-size:9px; font-weight:800; white-space:nowrap; }
+.tb-role-directory-empty { min-height:210px; padding:30px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px dashed #dce2ed; border-radius:11px; background:#fff; text-align:center; }
+.tb-role-directory-empty > span { width:42px; height:42px; margin-bottom:10px; display:grid; place-items:center; border-radius:50%; color:#7256dd; background:#f0edff; font-size:22px; }
+.tb-role-directory-empty h3 { margin:0 0 7px; color:#273451; font:800 14px Manrope,sans-serif; }
+.tb-role-directory-empty p { max-width:560px; margin:0 0 12px; color:#7c89a2; font-size:10px; line-height:1.6; }
+.tb-role-directory-empty a { color:#6549db; font-size:10px; font-weight:800; }
+.tb-role-directory-bottom-callout { margin-top:20px; padding:18px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; border-radius:10px; background:#f0edff; }
+.tb-role-directory-bottom-callout h2 { margin:0 0 4px; color:#263452; font:800 12px Manrope,sans-serif; }
+.tb-role-directory-bottom-callout p { margin:0; color:#7e8ca7; font-size:9px; }
+.tb-role-directory-bottom-callout a { min-height:32px; padding:0 12px; display:inline-flex; align-items:center; gap:7px; border-radius:18px; color:#fff; background:#6046db; font-size:9px; font-weight:800; white-space:nowrap; }
+
+.tb-career-selection-page .tb-onboarding-main { padding-top:42px; }
+.tb-career-selection-page .tb-onboarding-content { max-width:760px; }
+.tb-career-selection-page .tb-onboarding-topline a { color:#6b4fe8; font-weight:800; }
+.tb-career-selection-role-summary { display:block; margin-top:7px; color:#71809b; font-size:10px; }
+.tb-career-selection-catalogue-note { margin-top:18px; padding:14px 15px; display:grid; gap:6px; border:1px solid #e5ddff; border-radius:9px; color:#5e4c9b; background:#f8f5ff; }
+.tb-career-selection-catalogue-note strong { color:#382b67; font-size:11px; }
+.tb-career-selection-catalogue-note span { color:#756a98; font-size:10px; line-height:1.5; }
+.tb-career-selection-catalogue-note a { color:#6245d6; font-size:10px; font-weight:800; }
+
+@media (max-width: 1120px) {
+  .tb-industry-top-grid { grid-template-columns:minmax(0,1fr) 220px; gap:13px; }
+  .tb-industry-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .tb-role-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 860px) {
+  .figma-workspace-shell.phase2-navigation { display:block; padding-bottom:68px; }
+  .phase2-navigation .figma-workspace-sidebar,.phase2-navigation .figma-workspace-topbar { display:none; }
+  .phase2-navigation .figma-mobile-header { display:flex; }
+  .phase2-navigation .figma-workspace-content { max-width:none; padding:20px 20px 26px; }
+  .tb-industry-top-grid { grid-template-columns:1fr; }
+  .tb-industry-why-panel { order:2; }
+  .tb-industry-main-column { order:1; }
+  .tb-role-directory-filters { grid-template-columns:minmax(0,1fr) 180px; }
+  .tb-role-filter-button { grid-column:1 / -1; min-height:36px; }
+}
+@media (max-width: 600px) {
+  .phase2-navigation .figma-workspace-content { padding:17px 15px 24px; }
+  .tb-industry-heading h1,.tb-role-directory-heading h1 { font-size:25px; }
+  .tb-industry-heading p,.tb-role-directory-heading p { font-size:10px; }
+  .tb-industry-feature { min-height:205px; padding:18px; }
+  .tb-industry-feature-copy { width:78%; }
+  .tb-industry-feature > img { width:53%; opacity:.7; }
+  .tb-industry-feature h2 { font-size:18px; }
+  .tb-industry-feature p { font-size:10px; }
+  .tb-industry-card-grid,.tb-industry-trend-grid,.tb-role-card-grid { grid-template-columns:1fr; }
+  .tb-industry-card { min-height:145px; }
+  .tb-industry-trend-card { min-height:120px; }
+  .tb-industry-next-step { align-items:flex-start; flex-wrap:wrap; padding:14px; }
+  .tb-industry-next-step > div { flex:1; min-width:140px; }
+  .tb-industry-next-step a { margin-left:58px; }
+  .tb-role-directory-heading { align-items:flex-start; flex-direction:column; }
+  .tb-role-directory-filters { grid-template-columns:1fr; }
+  .tb-role-filter-button { grid-column:auto; min-height:38px; }
+  .tb-role-directory-feature { align-items:flex-start; flex-direction:column; padding:18px; }
+  .tb-role-directory-feature h2 { font-size:17px; }
+  .tb-role-directory-bottom-callout { align-items:flex-start; flex-direction:column; }
+  .tb-career-selection-page .tb-onboarding-main { padding:23px 20px 28px; }
+}
