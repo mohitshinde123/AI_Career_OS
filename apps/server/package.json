@@ -1,0 +1,23 @@
+{
+  "name": "@talentbridge/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/server.js && node --check src/app.js && node --check src/config/env.js && node --check src/config/database.js && node --check src/models/User.js && node --check src/models/CareerProfile.js && node --check src/modules/users/user.service.js && node --check src/modules/profiles/profile.schemas.js && node --check src/modules/profiles/profile.service.js && node --check src/middleware/require-auth.js && node --check src/middleware/request-context.js && node --check src/middleware/error-handler.js && node --check src/routes/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@talentbridge/contracts": "0.1.0",
+    "@clerk/express": "^2.1.79",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "mongoose": "^9.11.4",
+    "zod": "^4.1.12"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "talentbridge-phase1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TalentBridge Phase 1: public landing, Clerk authentication, onboarding, profile, and dashboard foundation.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "workspaces": [
+    "apps/client",
+    "apps/server",
+    "packages/contracts"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c blue,magenta \"npm run dev --workspace apps/server\" \"npm run dev --workspace apps/client\"",
+    "start": "npm run start --workspace apps/server",
+    "build": "npm run build --workspace apps/client",
+    "test": "npm run test --workspace apps/server",
+    "check:server": "npm run check --workspace apps/server",
+    "check": "npm run check:server && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
