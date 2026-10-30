@@ -34,3 +34,20 @@ export const PROFILE_VALUE_LABELS = Object.fromEntries([
   ...EDUCATION_OPTIONS,
   ...EXPERIENCE_OPTIONS,
 ]);
+
+// Phase 1 onboarding choices shared by the client and server.
+export const CAREER_GOAL_OPTIONS = [
+  ['senior_growth', 'Grow into a more senior role'],
+  ['next_opportunity', 'Find my next opportunity'],
+  ['career_direction', 'Explore a new career direction'],
+];
+
+export const WORK_PREFERENCE_OPTIONS = [
+  ['Remote', 'Remote'],
+  ['Hybrid', 'Hybrid'],
+  ['On-site', 'On-site'],
+  ['Open to anything', 'Open to anything'],
+];
+
+export const CAREER_GOAL_VALUES = CAREER_GOAL_OPTIONS.map(([value]) => value);
+export const WORK_PREFERENCE_VALUES = WORK_PREFERENCE_OPTIONS.map(([value]) => value);
